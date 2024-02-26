@@ -1,0 +1,21 @@
+.ipynb_checkpoints
+
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+*~$*.docx
+*.tmp
+
+.idea
+
+<<<<<<< HEAD
+**/build/**
+**/dist/**
+=======
+__pycache__
+
+dist
+build
+>>>>>>> 47ee54a939d06ce4892d53f9eac95003c7541389
