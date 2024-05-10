@@ -321,7 +321,7 @@ class MainWindow(QMainWindow):
             * 2.45
             * math.pow(self.LOC / 1000.0, self.p)
         )
-        time = round(3 * math.pow(labor, 0.33 + 0.2 * (self.p - 1.01)))
+        time = 3 * math.pow(labor, 0.33 + 0.2 * (self.p - 1.01))
         budget = avg_salary * labor
 
         self.set_arch_results(labor, time, budget)
@@ -351,8 +351,8 @@ class MainWindow(QMainWindow):
             + hard_report * 8
             + modules * 10
         )
-        labor = round((points * (100 - ruse) / 100) / exp)
-        time = round(3 * math.pow(labor, 0.33 + 0.2 * (self.p - 1.01)))
+        labor = (points * (100 - ruse) / 100) / exp
+        time = 3 * math.pow(labor, 0.33 + 0.2 * (self.p - 1.01))
         budget = avg_salary * labor
 
         self.set_comp_results(labor, time, budget)
